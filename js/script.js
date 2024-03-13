@@ -1,3 +1,5 @@
+// var text = document.getElementById("text")
+
 $(document).ready(function(){
 
   $('#menu').click(function(){
@@ -8,7 +10,7 @@ $(document).ready(function(){
   });
 
   $(window).on('load scroll',function(){
-
+    typeWriter();
     $('#menu').removeClass('fa-times');
     $('.navbar').removeClass('nav-toggle');
 
@@ -38,3 +40,14 @@ $(document).ready(function(){
   });
 
 });
+
+function typeWriter() {
+  var demo = "Grab Your Dream Company..."
+  var i = 0
+  var speed = 50;
+  if (i < demo.length) {
+    document.getElementById("text").innerHTML += demo.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}

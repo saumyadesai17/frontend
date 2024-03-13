@@ -48,6 +48,13 @@ html::-webkit-scrollbar-thumb{
     background:var(--green);
 }
 
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 section{
     min-height: 100vh;
     padding:0 7%;
@@ -81,7 +88,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding:2rem 7%;
-    background:#fff;
+    background: #DFF5FF;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     position: fixed;
     top: 0; left: 0;
@@ -93,8 +100,8 @@ header .logo img{
 }
 
 header .navbar a{
-    font-size: 2rem;
-    color:#aaa;
+    font-size: 2.5rem;
+    color: black;
     margin-left: 3rem;
 }
 
@@ -116,7 +123,8 @@ header .navbar a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background:url(../images/bg1.jpg) no-repeat;
+    /* background:url(../images/smooth-dark-blue-background.jpg) no-repeat; */
+    background-color: #5356FF;
     background-size: cover;
     background-position: center;
 }
@@ -128,9 +136,9 @@ header .navbar a:hover{
 
 .home .content h3{
     /* padding-top:px; */
-    font-size: 4.1rem;
+    font-size: 18.1rem;
     /* color:var(--green); */
-    color:rgb(255, 255, 255);
+    /* color:rgb(255, 255, 255); */
     /* color:rgb(236, 24, 24); */
     -webkit-text-stroke: 0.3vw black;
     text-transform: uppercase;

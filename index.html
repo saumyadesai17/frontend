@@ -16,12 +16,16 @@
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tenor+Sans&display=swap" rel="stylesheet">
+
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../css/ds.css">
 
 </head>
-<body onload="myfunction()">
+<body onload="myfunction(), typeWriter()">
 
 <div id="loading"></div>
 
@@ -48,9 +52,9 @@
 <section class="home" id="home">
 
     <div class="content">
-        <h3>Grab Your Dream Company...</h3>
+        <h3 class="bebas-neue-regular" id="text">Grab Your Dream Company...</h3>
         <p>Providing resources for students to prepare for job interviews and placement exams is a valuable contribution to their future success.</p>
-        <a href="#course"><button class="btn" >Go to Link</button></a>
+        <!-- <a href="#course"><button class="btn" >Go to Link</button></a> -->
     </div>
 
 </section>
@@ -118,9 +122,9 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
             </div>
-            <h3>Networking</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque ullam omnis odit accusamus doloremque? Cum aliquid unde nulla. Vitae, adipisci?</p>
-            <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx" class="btn">go to Link</a>
+            <h3>Resume Enhancer</h3>
+            <p>It Enhances Resume</p>
+            <a href="./resusme.html" class="btn">Enhance</a>
             <div class="icons">
                 <p> <i class="fa fa-clock"></i> 2 hours </p>
                 <p> <i class="fa fa-calendar"></i> 6 months </p>
@@ -301,6 +305,14 @@
     var preloader =document.getElementById('loading');  //   DOM
     function myfunction(){
         preloader.style.display = 'none';
+        // var demo = "Grab Your Dream Company..."
+        // var i = 0
+        // var speed = 50;
+        // if (i < demo.length) {
+        //     document.getElementById("text").innerHTML += demo.charAt(i);
+        //     i++;
+        //     setTimeout(typeWriter, speed);
+        // }
     }
 </script>
 
