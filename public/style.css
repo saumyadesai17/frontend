@@ -62,8 +62,8 @@ section{
 }
 
 .btn{
-    padding:.7rem 2rem;
-    font-size: 1.7rem;
+    padding:2rem 2rem;
+    font-size: 2.5rem;
     background:#666;
     color:#fff;
     cursor: pointer;
@@ -146,10 +146,8 @@ header .navbar a:hover{
 }
 
 #text{
-    height: 8vmin;
-    width: 50vmax;
     color: yellow;
-    font-size: 18rem;
+    font-size: 15rem;
 }
 
 .home .content p{
@@ -217,14 +215,16 @@ body h1 .heading{
 
 .course{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
-    gap:1.5rem;
+    padding: 0 3%;
+    gap:5rem;
 }
 
 
 
 .course .box{
-    flex:1 1 30rem;
     border-radius: .5rem;
     border:.1rem solid rgba(0,0,0,.1);
     padding:1rem;
@@ -247,7 +247,7 @@ body h1 .heading{
   
 .course .box h3{
     color:rgb(236, 24, 24);
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
   
 .course .box p{
@@ -257,8 +257,9 @@ body h1 .heading{
 }
 
 .course .box .btn{
-    font-size: 1.5rem;
-    padding:.5rem 2rem;
+    font-size: 2rem;
+    padding:1.5rem 2rem 1.5rem 2rem;
+    margin-bottom: 1rem;
     border-radius: 0.5rem;
 
 }
@@ -284,7 +285,29 @@ body h1 .heading{
 }
 
 
+.allboxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
 
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+    max-width: 45%;
+}
+
+.box h3{
+    font-size: 3rem;
+}
+
+.box h5{
+    font-size: 2rem;
+}
 
 .contact{
     padding-bottom: 3rem;
@@ -501,11 +524,7 @@ body h1 .heading{
 
     .home{
         /* background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)), url(../images/Background.gif) no-repeat; */
-        background-position: right;
-
-        
-        
-            
+        background-position: right;    
     }
 
     .home .content{
@@ -515,12 +534,10 @@ body h1 .heading{
 }
 
 @media (max-width:400px){
-
     html{
         font-size: 50%;
     }
     .footer .credit{
-        font-size: 10px;
-    }
-
+        font-size: 10px;
+    }
 }
