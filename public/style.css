@@ -57,7 +57,7 @@ html::-webkit-scrollbar-thumb{
 
 section{
     min-height: 100vh;
-    padding:0 7%;
+    padding:0 4%;
     padding-top: 9rem;
 }
 
@@ -88,7 +88,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding:2rem 7%;
-    background: #DFF5FF;
+    background: #b4c8c8;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     position: fixed;
     top: 0; left: 0;
@@ -122,9 +122,9 @@ header .navbar a:hover{
 .home{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     /* background:url(../images/smooth-dark-blue-background.jpg) no-repeat; */
-    background-color: #5356FF;
+    background-color: #c8c8dc;
     background-size: cover;
     background-position: center;
 }
@@ -145,9 +145,15 @@ header .navbar a:hover{
     text-emphasis-style: bold;
 }
 
+.homeimage{
+    height: auto;
+    width: 40%;
+}
+
 #text{
-    color: yellow;
+    color: #141414;
     font-size: 15rem;
+    font-weight: 600;
 }
 
 .home .content p{
